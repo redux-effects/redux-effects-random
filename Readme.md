@@ -7,7 +7,19 @@ Random number generator for redux-effects
 
 ## Installation
 
-    $ npm install @redux-effects/redux-effects-random
+    $ npm install redux-effects-random
+
+## Usage
+
+The `redux-effects-random` middleware takes a single parameter, a function which takes no arguments and returns a single (presumably random) number.  If you do not specify an RNG, it defaults to Math.random.
+
+This can be particularly useful for testing purposes, if you want to test behavior that is normally random in a deterministic way.  If this library is the sole source of entropy in your application, you may simply do:
+
+```javascript
+applyMiddleware(effects(random(() => 4)))
+```
+
+And your entire application will be [RFC 1149.5](https://xkcd.com/221/) compliant.
 
 ## License
 

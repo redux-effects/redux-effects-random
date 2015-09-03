@@ -1,5 +1,5 @@
 {
-  "name": "@redux-effects/redux-effects-random",
+  "name": "redux-effects-random",
   "description": "Random number generator for redux-effects",
   "repository": "git://github.com/redux-effects/redux-effects-random.git",
   "version": "0.1.0",
