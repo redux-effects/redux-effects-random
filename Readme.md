@@ -21,6 +21,20 @@ applyMiddleware(effects(random(() => 4)))
 
 And your entire application will be [RFC 1149.5](https://xkcd.com/221/) compliant.
 
+## Example
+
+```javascript
+import {createAction} from 'redux-actions'
+import random from 'declarative-random'
+
+const receivedPoints = createAction('RECEIVED_POINTS')
+
+function scoredPoints (score) {
+  return random()
+    .then(multiplier => receivedPoints(score + (multiplier * score)))
+}
+```
+
 ## License
 
 The MIT License
