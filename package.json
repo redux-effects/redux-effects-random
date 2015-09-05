@@ -2,7 +2,7 @@
   "name": "redux-effects-random",
   "description": "Random number generator for redux-effects",
   "repository": "git://github.com/redux-effects/redux-effects-random.git",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
