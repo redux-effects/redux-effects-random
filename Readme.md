@@ -31,7 +31,7 @@ const receivedPoints = createAction('RECEIVED_POINTS')
 
 function scoredPoints (score) {
   return random()
-    .then(multiplier => receivedPoints(score + (multiplier * score)))
+    .step(multiplier => receivedPoints(score + (multiplier * score)))
 }
 ```
 
