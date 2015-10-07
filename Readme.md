@@ -25,7 +25,7 @@ And your entire application will be [RFC 1149.5](https://xkcd.com/221/) complian
 
 ```javascript
 import {createAction} from 'redux-actions'
-import random from 'declarative-random'
+import {random} from 'redux-effects-random'
 
 const receivedPoints = createAction('RECEIVED_POINTS')
 
